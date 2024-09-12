@@ -1,22 +1,18 @@
 
 
-function Card() {
+function Card({title ,text}) {
     return (
        <>
-       <div className="card bg-base-100 w-96 shadow-xl">
-       <figure>
-       <img
-        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-        alt="Shoes" />
-       </figure>
-       <div className="card-body">
-       <h2 className="card-title">Shoes!</h2>
-       <p>If a dog chews shoes whose shoes does he choose?</p>
-       <div className="card-actions justify-end">
-       <button className="btn btn-primary">Buy Now</button>
-       </div>
-       </div>
-       </div>
+   <div class="max-w-sm rounded overflow-hidden shadow-lg">
+  <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"/>
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">{title}</div>
+    <p class="text-gray-700 text-base">
+     {description}
+    </p>
+  </div>
+  
+</div>
        </>
     )
   }
